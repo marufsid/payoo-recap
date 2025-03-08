@@ -1,11 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payoo Bank</title>
-</head>
-<body>
-    <h1>hello</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payoo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-slate-800">
+    <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-200">
+      <header>
+        <nav class="flex justify-center items-center mt-10">
+          <div
+            class="mt-10 relative flex justify-center items-center w-9/12 mb-12"
+          >
+            <img class="w-48 absolute" src="assets/bg.png" alt="" />
+            <img class="w-16" src="assets/Group.png" alt="" />
+          </div>
+        </nav>
+      </header>
+        <div class="hero-content">
+          <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <form class="card-body">
+              <fieldset class="fieldset">
+                <label class="fieldset-label">Mobile number</label> 
+                <input value="01720604420" id="account-number"
+                  type="number"
+                  class="input border-none"
+                  placeholder="Enter your number" required
+                />
+                <label class="fieldset-label">4 Digit Pin</label>
+                <input value="1234" id="pin" type="text" class="input border-none" placeholder="4 Digit Pin" required/>
+                <button id="login-btn" class="btn btn-primary rounded-full mt-4">Login</button>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+    </section>
+    <script src="./script/login.js"></script>
+  </body>
 </html>
