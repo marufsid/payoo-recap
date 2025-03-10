@@ -52,7 +52,7 @@
             <img class="w-8 mx-auto" src="assets/purse1.png" alt="" />
             <h3 class="font-semibold">Pay Bill</h3>
           </div>
-          <div class="box border p-4 text-center rounded-lg">
+          <div id="transaction-box" class="box border p-4 text-center rounded-lg">
             <img class="w-8 mx-auto" src="assets/money1.png" alt="" />
             <h3 class="font-semibold">Transactions</h3>
           </div>
@@ -107,7 +107,16 @@
           </div>
         </div>
       </section>
+      <section id="transaction-history">
+        <h1 class="text-2xl font-semibold text-center p-3">Transaction History</h1>
+        <div id="transaction-container"></div>
+      </section>
     </section>
-    <script src="script/addmoney.js"></script>
+    <!-- <script src="script/addmoney.js"></script> -->
+    <script src="utilities/utilities.js"></script>
+    <script src="utilities/toggle.js"></script>
+    <script src="script/add-money.js"></script>
+    <script src="script/cashout.js"></script>
+    <script src="script/transaction.js"></script>
   </body>
 </html>
