@@ -5,6 +5,11 @@ document.getElementById("cashout-btn").addEventListener("click", function(event)
     const pinNumber = getInputValueByID("cashout-pin");
     const mainBalance = getInnerTextById("main-balance");
 
+    if(amount>mainBalance) {
+        alert("invalid amount");
+        return
+    }
+
     if(accountNumber.length===11) {
         if(pinNumber===1234){
             const subtraction = mainBalance - amount;
